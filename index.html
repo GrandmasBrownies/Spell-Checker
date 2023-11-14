@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="UTF-8"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Checker</title>
+</head>
+<body>
+    <h1>Rättstavningsprogram</h1>
+    
+        <div class="wrapper">
+                <textarea placeholder="Skriv din text här..." id="user-input"></textarea>
+            </div>
+
+            <div class="check-spelling-button-container">
+                <button id="check-spelling-button">Kolla din stavning</button>
+            </div>
+        <div class="result">
+            <div id="incorrect-word">
+                <h2>Felstavade ord:</h2>
+                <p></p>
+            </div>
+            <div id="suggestions">
+                <h2>Förslag:</h2>
+                <p></p>
+            </div>
+
+            <div id="correct-word">
+                <h2>Rättstavade ord:</h2>
+                <p></p>
+            </div>
+        </div>
+    </body>
+</html>

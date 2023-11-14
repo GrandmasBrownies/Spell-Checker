@@ -1,0 +1,82 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    position:relative;
+}
+
+#user-input {
+    position: absolute;
+    margin: 1px;
+    padding: 1px;
+    width: 55vw;
+    height: 15vw;
+    resize: none;
+}
+
+#check-spelling-button{
+    position: absolute;
+    top: 160px;
+    right: 50px;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#e052a0,#f15c41);
+    border-radius: 3px;
+    padding: 16px 18px 15px;
+}
+
+#check-spelling-button:hover {
+    background-color: #e6375a;
+    background-image: none;
+}
+
+.result{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.result div{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 6px 10px;
+    border: solid 2px black;
+    word-wrap: break-word;
+}
+
+#suggestions{
+    width: 40vw;
+}
+
+#suggestions p{
+    margin: 0;
+}
+
+#suggestions h2{
+    margin-inline: auto;
+    top: 0;
+    position: relative;
+}
+
+#correct-word p, #incorrect-word p{
+    margin: 0;
+    width: 14vw;
+    max-width: 14vw;
+    height: 100%;
+}
